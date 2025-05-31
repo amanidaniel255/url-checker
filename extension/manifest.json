@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Peruzi Salama",
+  "version": "1.0.0",
+  "description": "Advanced URL security analysis that protects you from malicious links",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*",
+    "https://safebrowsing.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
