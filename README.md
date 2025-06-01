@@ -57,16 +57,18 @@ Run the app locally
 ```bash
 pnpm dev
 ```
-Visit [http://localhost:3000]
+Visit http://localhost:3000
 
 ## Browser Extension Mode (Optional)
 Build and load the extension:
 
-Go to [chrome://extensions]
+Go to chrome://extensions
 
 Enable Developer Mode
 
 Click Load unpacked and select the /extension folder
+
+And you will be needed to provide an api key from google console
 
 ## 🤝 Contributing
 We welcome contributions from developers, security researchers, and UI/UX designers.
@@ -78,8 +80,8 @@ Create a branch for your feature/fix:
 
 ```bash
 git checkout -b feature/your-feature-name
-Commit your changes with a clear message
 ```
+Commit your changes with a clear message
 
 Push and open a Pull Request
 
